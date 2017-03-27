@@ -1,0 +1,45 @@
+<!-- 通用标题栏 - 右功能区（包含搜索图标、完成按钮等） -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dist_fl_title_function"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="right|center_vertical">
+
+    <TextView
+        android:id="@+id/tv_text_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:paddingRight="@dimen/distance_size_normal_h"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_normal_h" />
+
+    <!-- 日期 按钮 -->
+    <ImageView
+        android:id="@+id/iv_title_logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/distance_size_normal_h"
+        android:paddingRight="@dimen/distance_size_normal_h"
+        android:layout_gravity="center_vertical"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        android:src="@drawable/time_logo"/>
+
+    <!-- 分享按钮-->
+    <ImageView
+        android:id="@+id/iv_timeshare"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/distance_size_normal_h"
+        android:paddingRight="@dimen/distance_size_normal_h"
+        android:layout_gravity="center_vertical"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        android:src="@drawable/share_logo"/>
+
+    <!-- [参考以上功能，可以在FrameLayout中自定义添加功能控件，且默认visibility为gone] -->
+</FrameLayout>

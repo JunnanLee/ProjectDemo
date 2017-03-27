@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_rl_height">
+
+        <ImageView
+            android:id="@+id/item_iv_pics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/take_photo" />
+
+        <ImageView
+            android:id="@+id/delete_logo"
+            android:layout_width="@dimen/distance_size_xlarge"
+            android:layout_height="@dimen/distance_size_xlarge"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/distance_size_tiny"
+            android:layout_marginTop="@dimen/distance_size_tiny"
+            android:src="@drawable/delete_pic_icon" />
+    </RelativeLayout>
+</LinearLayout>

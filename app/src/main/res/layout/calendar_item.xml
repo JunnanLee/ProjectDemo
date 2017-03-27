@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:background="@color/login_btn_color"
+  android:layout_width="match_parent"
+	android:orientation="vertical"
+	android:gravity="center"
+	android:layout_height="match_parent">
+  
+  <TextView
+	android:layout_width="35dp"
+	  android:gravity="center"
+	android:layout_height="35dp"
+	android:background="@drawable/shape_circle_white_bg"
+	android:id="@+id/tvtext"
+	/>
+
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:gravity="center"
+		android:layout_height="@dimen/distance_size_large_h">
+
+		<TextView
+			android:gravity="center"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:text="4"
+			android:textColor="#f5b81a"
+			android:drawablePadding="@dimen/distance_size_micro_h"
+			android:drawableLeft="@drawable/yellow_point"
+			android:textSize="@dimen/font_size_tiny"
+			android:id="@+id/tv_number"/>
+
+	</LinearLayout>
+
+
+</LinearLayout>

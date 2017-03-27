@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/l_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/null_white_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/sign_bottom_tab"
+            android:background="@color/login_btn_color"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/left_img"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/distance_size_normal_h"
+                android:paddingRight="@dimen/distance_size_normal_h"
+                android:src="@drawable/data_left_logo" />
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="xxxx年14月"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/font_size_large" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/right_img"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/distance_size_normal_h"
+                android:paddingRight="@dimen/distance_size_normal_h"
+                android:src="@drawable/date_right_logo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/login_btn_margin_top"
+            android:background="@color/login_btn_color">
+
+            <TextView
+                style="@style/weekName"
+                android:text="日" />
+
+            <TextView
+                style="@style/weekName"
+                android:text="一" />
+
+            <TextView
+                style="@style/weekName"
+                android:text="二" />
+
+            <TextView
+                style="@style/weekName"
+                android:text="三" />
+
+            <TextView
+                style="@style/weekName"
+                android:text="四" />
+
+            <TextView
+                style="@style/weekName"
+                android:text="五" />
+
+            <TextView
+                style="@style/weekName"
+                android:text="六" />
+        </LinearLayout>
+
+        <com.bm.sy.filmstudio.view.BMGridViewForScrollView
+            android:id="@+id/gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/login_btn_color"
+            android:clickable="true"
+            android:clipChildren="true"
+            android:columnWidth="@dimen/work_tab_height"
+            android:horizontalSpacing="1.0dip"
+            android:listSelector="@null"
+            android:numColumns="7"
+            android:paddingBottom="1.0dip"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="1.0dip" />
+    </LinearLayout>
+
+</LinearLayout>

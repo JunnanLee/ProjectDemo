@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/app_line"
+        android:background="@color/app_line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/distance_size_normal_h"
+        android:layout_marginRight="@dimen/distance_size_normal_h"
+        android:layout_height="1px"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="@dimen/person_pic_height">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="@dimen/login_num_et_top">
+
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="SFC上海影城新衡山店"
+                android:gravity="bottom"
+                android:textColor="#f5b81a"
+                android:textSize="@dimen/distance_size_normal_h"
+                android:paddingLeft="@dimen/distance_size_normal_h"
+                android:layout_height="@dimen/login_num_et_top" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:text="09:00"
+                android:gravity="bottom"
+                android:textColor="#727272"
+                android:textSize="@dimen/distance_size_normal_h"
+                android:paddingRight="@dimen/distance_size_normal_h"
+                android:layout_height="@dimen/login_num_et_top" />
+
+        </LinearLayout>
+
+        <!---->
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="match_parent"
+            android:text="上海市徐汇区虹桥路1号"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/distance_size_normal_h"
+            android:textColor="@color/main_text_color_black_dark"
+            android:textSize="@dimen/distance_size_normal"
+            android:paddingRight="@dimen/distance_size_normal_h"
+            android:layout_height="@dimen/login_num_et_top" />
+
+
+        </LinearLayout>
+    <View
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/distance_size_normal_h"
+        android:layout_marginRight="@dimen/distance_size_normal_h"
+        android:layout_height="@dimen/distance_size_large_h"/>
+
+
+</LinearLayout>

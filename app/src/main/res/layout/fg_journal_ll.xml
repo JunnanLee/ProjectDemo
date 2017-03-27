@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bmcustom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/l_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/login_btn_color"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="@dimen/person_pic_height"
+            android:layout_height="@dimen/person_pic_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/distance_size_normal"
+            android:background="@drawable/shape_circle_white">
+
+            <ImageView
+                android:id="@+id/iv_photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="1px"
+                android:src="@drawable/demo_pic_head" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/distance_size_small"
+            android:gravity="center"
+            android:text="鸡年大吉"
+            android:textColor="@color/white"
+            android:id="@+id/tv_name"
+            android:textSize="@dimen/font_size_normal" />
+
+        <RadioGroup
+            android:id="@+id/rg_tab_menu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/work_tab_height"
+            android:layout_marginLeft="@dimen/distance_size_normal_h"
+            android:layout_marginRight="@dimen/distance_size_normal_h"
+            android:layout_marginTop="@dimen/distance_size_normal_h"
+            android:background="@drawable/shape_bg_fillet_btn"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <com.bm.sy.filmstudio.view.BMRadioButton
+                android:id="@+id/menu_tab_submit"
+                style="@style/main_tab_btn"
+                android:checked="true"
+                android:drawablePadding="@dimen/distance_size_micro_h"
+                android:text="未提交"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_normal"
+                bmcustom:BMdrawableSize="@dimen/distance_size_large_h" />
+
+            <com.bm.sy.filmstudio.view.BMRadioButton
+                android:id="@+id/menu_tab_box"
+                style="@style/main_tab_btn"
+                android:checked="false"
+                android:drawablePadding="@dimen/distance_size_micro_h"
+                android:text="草稿箱"
+                android:textColor="@color/menu_sing_un_select"
+                android:textSize="@dimen/font_size_normal"
+                bmcustom:BMdrawableSize="@dimen/distance_size_large_h"
+              />
+
+            <com.bm.sy.filmstudio.view.BMRadioButton
+                android:id="@+id/btn_tab_wait"
+                style="@style/main_tab_btn"
+                android:checked="false"
+                android:drawablePadding="@dimen/distance_size_micro_h"
+                android:text="待审核"
+                android:textColor="@color/menu_sing_un_select"
+                android:textSize="@dimen/font_size_normal"
+                bmcustom:BMdrawableSize="@dimen/distance_size_large_h" />
+
+            <com.bm.sy.filmstudio.view.BMRadioButton
+                android:id="@+id/btn_tab_back"
+                style="@style/main_tab_btn"
+                android:checked="false"
+                android:drawablePadding="@dimen/distance_size_micro_h"
+                android:text="退回"
+                android:textColor="@color/menu_sing_un_select"
+                android:textSize="@dimen/font_size_normal"
+                bmcustom:BMdrawableSize="@dimen/distance_size_large_h"
+                />
+
+            <com.bm.sy.filmstudio.view.BMRadioButton
+                android:id="@+id/btn_tab_pass"
+                style="@style/main_tab_btn"
+                android:checked="false"
+                android:drawablePadding="@dimen/distance_size_micro_h"
+                android:text="审核通过"
+                android:textColor="@color/menu_sing_un_select"
+                android:textSize="@dimen/font_size_normal"
+                bmcustom:BMdrawableSize="@dimen/distance_size_large_h" />
+        </RadioGroup>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape_bg_fillet_btn"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/distance_size_small"
+            android:layout_marginLeft="@dimen/distance_size_normal_h"
+            android:layout_marginRight="@dimen/distance_size_normal_h"
+            android:layout_height="match_parent">
+
+            <com.bm.sy.filmstudio.util.ZQExpandableListView
+                android:id="@+id/lv_ex_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:childIndicatorLeft="0dp"
+                android:layout_weight="1"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:groupIndicator="@null"
+                android:listSelector="@android:color/transparent"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:scrollbars="none"/>
+            <TextView
+                android:id="@+id/tv_build"
+                android:layout_width="match_parent"
+                android:text="新建日志"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/distance_size_large"
+                android:layout_marginBottom="@dimen/distance_size_large"
+                android:layout_marginLeft="@dimen/distance_size_normal_h"
+                android:layout_marginRight="@dimen/distance_size_normal_h"
+                android:textSize="@dimen/font_size_normal_h"
+                android:background="@drawable/shape_btn_sign_now_bg"
+                android:layout_height="@dimen/sing_place_height" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

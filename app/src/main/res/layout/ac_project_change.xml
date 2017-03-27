@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/null_white_bg"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/l_title"/>
+
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:hint="请输入你想要的内容"
+        android:textSize="@dimen/font_size_normal"
+        android:textColorHint="#cccccc"
+        android:textColor="@color/main_text_color_black_dark"
+        android:background="@drawable/shape_white_btn_bg"
+        android:drawableLeft="@drawable/sousuo_logo"
+        android:drawablePadding="@dimen/distance_size_small"
+        android:paddingLeft="@dimen/distance_size_normal_h"
+        android:cursorVisible="true"
+        android:singleLine="true"
+        android:layout_marginRight="@dimen/distance_size_normal_h"
+        android:imeOptions="actionSearch"
+        android:layout_marginLeft="@dimen/distance_size_normal_h"
+        android:layout_marginTop="@dimen/distance_size_small"
+        android:layout_height="@dimen/project_search_height" />
+
+    <ListView
+        android:id="@+id/lv_project"
+        android:listSelector="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:divider="@android:color/transparent"
+        android:scrollbars="none"
+        android:dividerHeight="@dimen/distance_size_small"
+        android:layout_marginRight="@dimen/distance_size_normal_h"
+        android:layout_marginLeft="@dimen/distance_size_normal_h"
+        android:paddingTop="@dimen/distance_size_small"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

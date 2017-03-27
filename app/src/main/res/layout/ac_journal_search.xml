@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bmcustom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/null_white_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/l_title"/>
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:hint="请输入你想要的内容"
+        android:textSize="@dimen/font_size_normal"
+        android:textColorHint="#cccccc"
+        android:textColor="@color/main_text_color_black_dark"
+        android:background="@drawable/shape_white_btn_bg"
+        android:drawableLeft="@drawable/sousuo_logo"
+        android:drawablePadding="@dimen/distance_size_small"
+        android:paddingLeft="@dimen/distance_size_normal_h"
+        android:cursorVisible="true"
+        android:singleLine="true"
+        android:layout_marginRight="@dimen/distance_size_normal_h"
+        android:imeOptions="actionSearch"
+        android:layout_marginLeft="@dimen/distance_size_normal_h"
+        android:layout_marginTop="@dimen/distance_size_small"
+        android:layout_height="@dimen/project_search_height" />
+
+    <RadioGroup
+        android:id="@+id/rg_tab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/person_pic_height"
+        android:layout_marginLeft="@dimen/distance_size_normal_h"
+        android:layout_marginRight="@dimen/distance_size_normal_h"
+        android:layout_marginTop="@dimen/distance_size_small"
+        android:background="@drawable/shape_up_left_right_bg"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.bm.sy.filmstudio.view.BMRadioButton
+            android:id="@+id/menu_tab_film"
+            style="@style/main_tab_btn"
+            android:checked="true"
+            android:drawablePadding="@dimen/distance_size_micro_h"
+            android:text="片方"
+            android:textColor="@color/main_text_color_black_dark"
+            android:textSize="@dimen/font_size_tiny"
+            bmcustom:BMdrawableSize="@dimen/distance_size_large_h"
+            bmcustom:BMdrawableTop="@drawable/tab_film_selector_search" />
+
+        <com.bm.sy.filmstudio.view.BMRadioButton
+            android:id="@+id/menu_tab_park"
+            style="@style/main_tab_btn"
+            android:checked="false"
+            android:drawablePadding="@dimen/distance_size_micro_h"
+            android:text="影院"
+            android:textColor="@color/tab_text_color"
+            android:textSize="@dimen/font_size_tiny"
+            bmcustom:BMdrawableSize="@dimen/distance_size_large_h"
+            bmcustom:BMdrawableTop="@drawable/tab_park_selector_search" />
+
+        <com.bm.sy.filmstudio.view.BMRadioButton
+            android:id="@+id/btn_tab_manage"
+            style="@style/main_tab_btn"
+            android:checked="false"
+            android:drawablePadding="@dimen/distance_size_micro_h"
+            android:text="影管"
+            android:textColor="@color/tab_text_color"
+            android:textSize="@dimen/font_size_tiny"
+            bmcustom:BMdrawableSize="@dimen/distance_size_large_h"
+            bmcustom:BMdrawableTop="@drawable/tab_manage_selector_search" />
+
+        <com.bm.sy.filmstudio.view.BMRadioButton
+            android:id="@+id/btn_tab_line"
+            style="@style/main_tab_btn"
+            android:checked="false"
+            android:drawablePadding="@dimen/distance_size_micro_h"
+            android:text="院线"
+            android:textColor="@color/tab_text_color"
+            android:textSize="@dimen/font_size_tiny"
+            bmcustom:BMdrawableSize="@dimen/distance_size_large_h"
+            bmcustom:BMdrawableTop="@drawable/tab_line_selector_search" />
+        <com.bm.sy.filmstudio.view.BMRadioButton
+            android:id="@+id/btn_tab_pull"
+            style="@style/main_tab_btn"
+            android:checked="false"
+            android:drawablePadding="@dimen/distance_size_micro_h"
+            android:text="营销推广"
+            android:textColor="@color/tab_text_color"
+            android:textSize="@dimen/font_size_tiny"
+            bmcustom:BMdrawableSize="@dimen/distance_size_large_h"
+            bmcustom:BMdrawableTop="@drawable/tab_pull_selector_search" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="fill_parent"
+            android:scrollbars="none"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:paddingTop="@dimen/distance_size_small"
+            android:listSelector="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:background="@drawable/shape_down_left_right_bg"
+            android:layout_marginRight="@dimen/distance_size_normal_h"
+            android:layout_marginLeft="@dimen/distance_size_normal_h"
+            android:layout_marginBottom="@dimen/distance_size_normal_h"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

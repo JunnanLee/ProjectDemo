@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 主界面tab按钮 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/manage_logo_sel"
+        android:state_checked="true" />
+    <item android:drawable="@drawable/manage_logo_un" />
+</selector>

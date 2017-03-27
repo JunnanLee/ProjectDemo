@@ -1,0 +1,20 @@
+<!-- 通用标题栏 - 中间功能区（包含标题等） -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tv_title_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_large"
+        android:visibility="gone" />
+    <!-- [参考以上功能，可以在FrameLayout中自定义添加功能控件，且除标题外其它布局须默认visibility为gone] -->
+
+</FrameLayout>

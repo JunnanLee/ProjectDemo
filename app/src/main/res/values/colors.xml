@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+
+    <!-- 通用 -->
+
+    <color name="main_app_color_blue">#0091e1</color>
+    <color name="main_app_top_blue">#4766ff</color>
+
+
+    <color name="main_text_color_blue">#0091e1</color>
+    <color name="main_text_color_black_dark">#333333</color>
+    <color name="main_text_color_gray">#666666</color>
+    <color name="main_text_color_gray_light">#999999</color>
+    <color name="main_line_color_gray_light">#dddddd</color>
+    <color name="contact_bg">#f0f3f5</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="half_transparent">#77000000</color>
+    <color name="tab_text_color">#cccccc</color>
+
+
+
+    <color name="main_bg_color">#ffffff</color>
+    <!--线-->
+    <color name="app_line">#dddddd</color>
+
+
+    <!--登录-->
+    <color name="login_btn_color">#4766ff</color>
+
+
+    <!--签到-->
+    <color name="menu_sing_un_select">#8797ff</color>
+    <color name="sign_text_color_yellow">#f7bf36</color>
+    <color name="lv_line_color">#808fff</color>
+    <!--黑色半透明-->
+    <color name="half_dark_bg">#c1000000</color>
+    <color name="out_window_bg">#111a3e</color>
+
+    <!--忘记密码-->
+    <color name="null_white_bg">#f2f2f2</color>
+    <!--日志-->
+    <color name="work_text_list_color">#f5b81a</color>
+    <color name="work_line_color">#7f8fff</color>
+    <color name="delete_scroll_color">#ff605d</color>
+
+
+</resources>

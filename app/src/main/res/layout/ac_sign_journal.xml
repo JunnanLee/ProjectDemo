@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bmcustom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- 中间内容 -->
+    <FrameLayout
+        android:id="@+id/tab_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/login_btn_color"
+        android:layout_weight="1"
+        android:fitsSystemWindows="true" />
+    <RadioGroup
+        android:id="@+id/rg_tab_switch"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_btn_height"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <com.bm.sy.filmstudio.view.BMRadioButton
+            android:id="@+id/btn_tab_sign"
+            style="@style/main_tab_btn"
+            android:checked="true"
+            android:text="签到"
+            android:textColor="@color/login_btn_color"
+            android:textSize="@dimen/font_size_tiny"
+            bmcustom:BMdrawableSize="@dimen/distance_size_large"
+            bmcustom:BMdrawableTop="@drawable/tab_sign_selector" />
+        <com.bm.sy.filmstudio.view.BMRadioButton
+            android:id="@+id/btn_tab_log"
+            style="@style/main_tab_btn"
+            android:checked="false"
+            android:text="日志"
+            android:textColor="@color/main_text_color_gray"
+            android:textSize="@dimen/font_size_tiny"
+            bmcustom:BMdrawableSize="@dimen/distance_size_xlarge"
+            bmcustom:BMdrawableTop="@drawable/tab_log_selector" />
+    </RadioGroup>
+</LinearLayout>

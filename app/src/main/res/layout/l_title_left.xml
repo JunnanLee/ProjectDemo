@@ -1,0 +1,34 @@
+<!-- 通用标题栏 - 左功能区（包含返回键等） -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:layout_gravity="left|center_vertical">
+
+
+    <!--返回键-->
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:padding="@dimen/distance_size_normal_h"
+        android:visibility="gone"
+        android:scaleType="fitCenter"
+        android:src="@drawable/iv_back" />
+
+    <!--时间-->
+    <TextView
+        android:id="@+id/tv_text_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:paddingLeft="@dimen/distance_size_normal_h"
+        android:visibility="visible"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_normal" />
+
+    <!-- [参考以上功能，可以在FrameLayout中自定义添加功能控件，且默认visibility为gone] -->
+</FrameLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <View
+        android:id="@+id/app_line"
+        android:background="@color/app_line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/distance_size_normal_h"
+        android:layout_marginRight="@dimen/distance_size_normal_h"
+        android:layout_height="1px"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_rl_height"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_shop_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/distance_size_micro_h"
+                android:paddingLeft="@dimen/distance_size_normal_h"
+                android:singleLine="true"
+                android:text="12313123213213213213"
+                android:textColor="@color/sign_text_color_yellow"
+                android:textSize="@dimen/font_size_normal_h" />
+
+            <TextView
+                android:id="@+id/tv_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/distance_size_micro_h"
+                android:paddingLeft="@dimen/distance_size_normal_h"
+                android:singleLine="true"
+                android:text="12312312312321"
+                android:textColor="@color/main_text_color_gray_light"
+                android:textSize="@dimen/font_size_normal" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_choose_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/distance_size_normal_h"
+            android:paddingRight="@dimen/distance_size_normal_h"
+            android:src="@drawable/un_xuanze" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

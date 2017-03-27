@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BMRadioButton"> 
+        <attr name="BMdrawableSize" format="dimension"/>
+        <attr name="BMdrawableWidth" format="dimension"/>
+        <attr name="BMdrawableHeight" format="dimension"/>
+        <attr name="BMdrawableTop" format="reference"/>
+        <attr name="BMdrawableBottom" format="reference"/>
+        <attr name="BMdrawableRight" format="reference"/>
+        <attr name="BMdrawableLeft" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="SFScaleLayout">
+        <attr name="scale" format="float"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="MarqueeViewStyle">
+        <attr name="mvInterval" format="integer|reference"/>
+        <attr name="mvAnimDuration" format="integer|reference"/>
+        <attr name="mvTextSize" format="dimension|reference"/>
+        <attr name="mvTextColor" format="color|reference"/>
+        <attr name="mvGravity">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+    </declare-styleable>
+</resources>

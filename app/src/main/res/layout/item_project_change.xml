@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/shape_white_btn_bg"
+        android:layout_height="@dimen/item_project_height">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/distance_size_normal_h"
+            android:layout_width="@dimen/item_project_pic_with"
+            android:layout_height="@dimen/item_project_pic_height"
+            android:id="@+id/iv_pic" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/distance_size_normal_h"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:gravity="bottom"
+                android:layout_height="@dimen/item_project_name_height">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="分歧者"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/font_size_normal_h"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_name" />
+                <TextView
+                    android:id="@+id/tv_ticket"
+                    android:layout_width="wrap_content"
+                    android:text="102054121.62"
+                    android:textColor="@color/login_btn_color"
+                    android:textSize="@dimen/font_size_large"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="万票房"
+                    android:layout_marginLeft="@dimen/distance_size_micro"
+                    android:layout_marginBottom="@dimen/distance_size_micro"
+                    android:textColor="@color/main_text_color_gray"
+                    android:textSize="@dimen/font_size_small"
+                    android:layout_marginRight="@dimen/distance_size_normal_h"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="2017年2月14日 周五"
+                android:gravity="bottom"
+                android:layout_marginLeft="@dimen/distance_size_micro"
+                android:layout_marginBottom="@dimen/distance_size_micro"
+                android:textColor="@color/main_text_color_gray"
+                android:textSize="@dimen/font_size_normal"
+                android:layout_marginRight="@dimen/distance_size_normal_h"
+                android:layout_height="@dimen/distance_size_xlarge_h"
+                android:id="@+id/tv_time" />
+
+            <TextView
+                android:id="@+id/tv_actor"
+                android:layout_width="match_parent"
+                android:text="导演：伊万科夫"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/distance_size_micro"
+                android:layout_marginBottom="@dimen/distance_size_micro"
+                android:textColor="@color/main_text_color_gray"
+                android:textSize="@dimen/font_size_normal"
+                android:layout_marginRight="@dimen/distance_size_normal_h"
+                android:layout_height="@dimen/item_project_actor_height" />
+
+            <TextView
+                android:id="@+id/tv_star"
+                android:layout_width="match_parent"
+                android:text="主演：伊万科夫"
+                android:gravity="top"
+                android:layout_marginLeft="@dimen/distance_size_micro"
+                android:layout_marginBottom="@dimen/distance_size_micro"
+                android:textColor="@color/main_text_color_gray"
+                android:textSize="@dimen/font_size_normal"
+                android:layout_marginRight="@dimen/distance_size_normal_h"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

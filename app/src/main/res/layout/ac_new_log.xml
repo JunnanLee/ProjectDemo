@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/null_white_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/l_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/distance_size_normal"
+                android:layout_marginRight="@dimen/distance_size_normal"
+                android:layout_marginTop="@dimen/distance_size_normal"
+                android:background="@drawable/shape_white_btn_bg"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/login_btn_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/text_layout_with"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/distance_size_large"
+                        android:text="项目名称"
+                        android:textColor="@color/main_text_color_black_dark"
+                        android:textSize="@dimen/font_size_normal" />
+
+                    <TextView
+                        android:id="@+id/tv_project"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="请选择项目名称"
+                        android:singleLine="true"
+                        android:textColor="@color/main_text_color_gray_light"
+                        android:textSize="@dimen/font_size_normal" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/distance_size_large"
+                        android:src="@drawable/enter_logo" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/app_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/login_btn_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/text_layout_with"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/distance_size_large"
+                        android:text="日志日期"
+                        android:textColor="@color/main_text_color_black_dark"
+                        android:textSize="@dimen/font_size_normal" />
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="请选择日志日期"
+                        android:singleLine="true"
+                        android:textColor="@color/main_text_color_gray_light"
+                        android:textSize="@dimen/font_size_normal" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/distance_size_large"
+                        android:src="@drawable/enter_logo" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tab_new_log_height"
+                android:layout_marginLeft="@dimen/distance_size_normal"
+                android:layout_marginRight="@dimen/distance_size_normal"
+                android:layout_marginTop="@dimen/distance_size_small"
+                android:background="@drawable/shape_white_btn_bg"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_add_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/log_biao_dan" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/distance_size_tiny"
+                        android:gravity="center"
+                        android:text="新建一条"
+                        android:textColor="@color/main_text_color_black_dark"
+                        android:textSize="@dimen/font_size_small" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/distance_size_micro_h"
+                        android:gravity="center"
+                        android:text="表单类记录"
+                        android:textColor="@color/main_text_color_black_dark"
+                        android:textSize="@dimen/font_size_small" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_add_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/log_tu_wen"
+                        android:id="@+id/imageView2" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/distance_size_micro_h"
+                        android:gravity="center"
+                        android:text="新建一条"
+                        android:textColor="@color/main_text_color_black_dark"
+                        android:textSize="@dimen/font_size_small" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/distance_size_micro_h"
+                        android:gravity="center"
+                        android:text="图文类记录"
+                        android:textColor="@color/main_text_color_black_dark"
+                        android:textSize="@dimen/font_size_small" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_del"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/log_delete" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/distance_size_tiny"
+                        android:gravity="center"
+                        android:text="删除"
+                        android:textColor="@color/main_text_color_black_dark"
+                        android:textSize="@dimen/font_size_small" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/distance_size_micro_h"
+                        android:gravity="center"
+                        android:text="本条记录"
+                        android:textColor="@color/main_text_color_black_dark"
+                        android:textSize="@dimen/font_size_small" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/distance_size_normal"
+                android:layout_marginRight="@dimen/distance_size_normal"
+                android:layout_marginTop="@dimen/distance_size_small"
+                android:background="@drawable/shape_white_btn_bg"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/login_btn_height">
+
+
+
+                <ImageView
+                    android:id="@+id/iv_left_btn"
+                    android:src="@drawable/left_enter_logo"
+                    android:layout_width="wrap_content"
+                    android:paddingRight="@dimen/distance_size_normal_h"
+                    android:paddingLeft="@dimen/distance_size_normal_h"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tv_notice"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/main_text_color_black_dark"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/font_size_normal_h"
+                    android:text="当前为第2条/共4条记录"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/iv_right_btn"
+                    android:src="@drawable/enter_logo"
+                    android:layout_width="wrap_content"
+                    android:paddingRight="@dimen/distance_size_normal_h"
+                    android:paddingLeft="@dimen/distance_size_normal_h"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <com.bm.sy.filmstudio.view.ChildViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.bm.sy.filmstudio.view.ChildViewPager>
+            <TextView
+                android:id="@+id/tv_submit"
+                android:layout_marginTop="@dimen/distance_size_large"
+                android:layout_width="match_parent"
+                android:text="提交"
+                android:gravity="center"
+                android:textSize="@dimen/font_size_normal_h"
+                android:textColor="@color/white"
+                android:background="@color/login_btn_color"
+                android:layout_height="@dimen/login_btn_height" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
